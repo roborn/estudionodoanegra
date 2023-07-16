@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   site: "https://roborn.github.io",
-  site: "/estudionodoanegra",
+  base: "/estudionodoanegra",
   integrations: [
     tailwind(),
     image({
