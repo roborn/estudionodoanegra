@@ -5,7 +5,7 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://estudionodoanegra.com",
+  site: "https://estudionodoanegra.github.io",
   integrations: [
     tailwind(),
     image({
