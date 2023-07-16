@@ -1,0 +1,85 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Inscricaoform from "@components/inscricaoform.astro";
+---
+
+<Layout title="Treino 1:3">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Treino 1:3</Fragment>
+      <Fragment slot="desc">Pequenos grupos de treino personalizado</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <p class="text-lg mt-4 text-slate-800">
+          Realizamos treinos personalizados em pequenos grupos, com um máximo de 3 clientes simultaneamente, em que cada grupo é acompanhado por um treinador dedicado, que oferece atenção individualizada a cada participante.
+        </p>
+        <p class="text-lg mt-4 text-slate-800">
+          Esta abordagem permite que aproveites os benefícios do treino personalizado, enquanto desfrutas de uma atmosfera motivadora e de apoio mútuo com os outros membros do grupo.
+        </p>
+        <p class="text-lg mt-4 text-slate-800">Mantemos os grupos intencionalmente pequenos para garantir que recebas a orientação necessária para atingires os teus objetivos de forma eficaz.
+        </p>
+        <div class="prose prose-lg mt-10">
+        <h3>Preçário</h3>
+        <table class="text-center">
+          <thead class="border-gray-800">
+            <tr>
+              <th>Plano</th>
+              <th>Entradas</th>
+              <th>Mensalidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-gray-600">
+              <td>1</td>
+              <td>12</td>
+              <td>180€</td>
+            </tr>
+            <tr class="border-gray-600">
+              <td>2</td>
+              <td>10</td>
+              <td>160€</td>
+            </tr>
+            <tr class="border-gray-600">
+              <td>3</td>
+              <td>8</td>
+              <td>145€</td>
+            </tr>
+            <tr class="border-gray-600">
+              <td>4</td>
+              <td>6</td>
+              <td>115€</td>
+            </tr>
+            <tr class="border-gray-600">
+              <td>5</td>
+              <td>4</td>
+              <td>80€</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-sm mt-4 text-slate-800">
+          Ao preço da mensalidade <b>acresce o IVA à taxa legal de 22%.</b>
+        </p>
+      </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">Pré-inscrição</h2>
+        <p class="text-slate-800 mt-3">
+          Preenche o formulário e contactamos-te logo que possível.
+        </p>
+        <p class="text-slate-800 mt-3">
+          Podes sempre entrar em <a href="/estudionodoanegra/contacto" class="underline">contacto connosco</a> para esclarecer alguma dúvida ou visitares o nosso espaço.
+        </p>
+      </div>
+      <div>
+        <Inscricaoform />
+      </div>
+    </div>
+  </Container>
+</Layout>

@@ -16,7 +16,7 @@ const pricing = [
     ],
     button: {
       text: "Mais informação sobre o 1:3",
-      link: "/contacto",
+      link: "/estudionodoanegra/treino-grupo",
     },
   },
   {
@@ -30,7 +30,7 @@ const pricing = [
     ],
     button: {
       text: "Mais informação sobre o 1:1",
-      link: "/contacto",
+      link: "/estudionodoanegra/treino-individual",
     },
   },
 ];
@@ -38,11 +38,12 @@ const pricing = [
 
 <Container>
   <Sectionhead>
-    <Fragment slot="title">Preçário</Fragment>
-    <Fragment slot="desc">Os dois modos incluem toalha de treino e café <Icon class="text-black w-5 h-5 mb-1 inline-block" name="bx:bx-coffee" /></Fragment>
+    <Fragment slot="title">Os nossos treinos</Fragment>
+    <Fragment slot="desc">Oferecemos dois modos distintos de treino personalizado para atender às tuas necessidades individuais.</Fragment>
   </Sectionhead>
 
   <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-screen-lg mt-12">
     {pricing.map((item) => <Pricing plan={item} />)}
+    <p>** Os dois modos incluem toalha de treino e café <Icon class="text-black w-5 h-5 mb-1 inline-block" name="bx:bx-coffee" /></p>
   </div>
 </Container>
