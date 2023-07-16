@@ -1,0 +1,48 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Pricing from "@components/pricing.astro";
+import { Icon } from "astro-icon";
+
+const pricing = [
+  {
+    name: "Treino em pequenos grupos",
+    price: "1:3",
+    popular: true,
+    features: [
+      "1 treinador por 3 clientes (máximo)",
+      "Sessão de 1 hora",
+      "Motivação de grupo",
+    ],
+    button: {
+      text: "Mais informação sobre o 1:3",
+      link: "/contacto",
+    },
+  },
+  {
+    name: "Treino Personalizado",
+    price: "1:1",
+    popular: false,
+    features: [
+      "1 treinador por cliente",
+      "Sessão de 1 hora",
+      "Atendimento com mais privacidade",
+    ],
+    button: {
+      text: "Mais informação sobre o 1:1",
+      link: "/contacto",
+    },
+  },
+];
+---
+
+<Container>
+  <Sectionhead>
+    <Fragment slot="title">Preçário</Fragment>
+    <Fragment slot="desc">Os dois modos incluem toalha de treino e café <Icon class="text-black w-5 h-5 mb-1 inline-block" name="bx:bx-coffee" /></Fragment>
+  </Sectionhead>
+
+  <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-screen-lg mt-12">
+    {pricing.map((item) => <Pricing plan={item} />)}
+  </div>
+</Container>

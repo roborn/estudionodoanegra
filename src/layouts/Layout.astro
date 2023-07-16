@@ -1,0 +1,66 @@
+---
+import { SEO } from "astro-seo";
+import Footer from "@components/footer.astro";
+import Navbar from "@components/navbar/navbar.astro";
+import "@fontsource/inter/variable.css";
+
+export interface Props {
+  title: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+
+const resolvedImageWithDomain = new URL(
+  "/opengraph.jpg",
+  Astro.site
+).toString();
+
+const { title } = Astro.props;
+
+const makeTitle = title
+  ? title + " | " + "Estúdio Nódoa Negra"
+  : "Estúdio Nódoa Negra — Treino personalizado em pequenos grupos";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <SEO
+      title={makeTitle}
+      description="Estúdio Nódoa Negra — Treino personalizado em pequenos grupos."
+      canonical={canonicalURL}
+      twitter={{
+        creator: "@estudionodoanegra",
+        site: "@estudionodoanegra",
+        card: "summary_large_image",
+      }}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: `Nódoa Negra — Estúdio de treino personalizado`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "Estúdio Nódoa Negra",
+        },
+      }}
+    />
+  </head>
+  <body class="bg-yellow-500">
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      /* Improve Page speed */
+      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
+</html>

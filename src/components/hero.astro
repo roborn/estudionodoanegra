@@ -1,0 +1,59 @@
+---
+import { Picture } from "@astrojs/image/components";
+import Logo from "assets/logo-nodoa-negra.png";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
+---
+
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Picture
+      src={Logo}
+      alt="Estúdio Nódoa Negra"
+      widths={[275, 550, 1100]}
+      aspectRatio="1:1"
+      sizes="(max-width: 800px) 100vw, 550px"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl font-bold lg:tracking-tight xl:tracking-tighter mb-3">
+      Nódoa Negra
+    </h1>
+    <h2
+      class="text-3xl lg:text-4xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Estúdio de Treino Personalizado
+    </h2>
+    <p class="text-lg mt-4 text-slate-900 max-w-xl">
+      Somos um estúdio localizado no <b>Funchal, Madeira</b>, onde promovemos a atividade física para todos os tipos de pessoas, ajudando a aumentar a força e resistência.
+    </p>
+    <p class="text-lg mt-4 text-slate-900 max-w-xl">
+      Aqui na Nódoa Negra, os nossos treinadores são especialistas em treino de força, hipertrofia e melhoria da composição corporal.
+    </p>
+    <p class="text-lg mt-4 text-slate-900 max-w-xl">
+      Através de diversos exercícios, que desafiam os teus limites e podem deixar algumas "nódoas negras", queremos melhorar a tua condição física e aumentar a tua auto-estima.
+    </p>
+    <!--
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="/precario"
+        class="flex gap-1 items-center justify-center text-yellow-500"
+        rel="noopener">
+        <Icon class="text-yellow-500 w-5 h-5" name="bx:bx-table" />
+        Preçário
+      </Link>
+      <Link
+        size="lg"
+        style="outline"
+        href="/contacto"
+        class="flex gap-1 items-center justify-center bg-yellow-500">
+        <Icon class="text-black w-4 h-4" name="bx:bx-caret-right-circle" />
+        Inscreve-te!
+      </Link>
+    </div>
+  -->
+  </div>
+</main>
