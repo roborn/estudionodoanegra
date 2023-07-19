@@ -10,7 +10,7 @@ module.exports = {
     },
     colors: {
       primary: "rgb(178 168 151)",
-      secondary: "rgb(60, 60, 60)",
+      secondary: "rgb(60 60 60)",
     },
   },
   plugins: [require("@tailwindcss/typography")],
