@@ -1,12 +1,19 @@
+---
+import { useTranslations, Language } from "@i18n/utils";
+
+interface Props {
+  lang?: Language;
+}
+
+const lang = Astro.props.lang || 'pt';
+const t = useTranslations(lang);
+---
+
 <div class="mt-16 md:mt-0">
   <h3 class="text-3xl lg:text-4xl font-medium lg:tracking-tight">
-    Para quem se destina
+    {t('features.title')}
   </h3>
-  <p class="text-lg mt-4 text-slate-800">
-    Acreditamos que os nossos serviços de treino personalizado são destinados a todas as pessoas que desejam um atendimento personalizado, orientação especializada, privacidade e segurança.<br>
-    Queremos acolher-te se estás comprometido em melhorar a tua condição física, independentemente do teu nível de experiência ou habilidade.
-  </p>
-  <p class="text-lg mt-4 text-slate-800">
-    Se valorizas um ambiente tranquilo, onde podes concentrar-te nos teus objetivos pessoais, receber atenção individualizada e sentir-te confortável durante todo o processo, estamos aqui para te atender. O nosso estúdio é um espaço projectado para proporcionar-te uma experiência única, onde te sentirás apoiado e motivado a alcançar os teus resultados desejados.
-  </p>
+  <p class="text-lg mt-4 text-slate-800" set:html={t('features.description_1')} />
+  <p class="text-lg mt-4 text-slate-800" set:html={t('features.description_2')} />
 </div>
+

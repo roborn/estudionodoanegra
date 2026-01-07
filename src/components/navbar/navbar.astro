@@ -3,28 +3,123 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { useTranslations, getLangFromUrl } from "@i18n/utils";
 
-const menuitems = [
-  {
-    title: "Treino 1:3",
-    path: "/treino-grupo",
-  },
-  {
-    title: "Treino 1:1",
-    path: "/treino-individual",
-  },
-  {
-    title: "Contacto",
-    path: "/contacto",
-  },
-];
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const currentPath = Astro.url.pathname;
+
+// Helper function to get the base page type from any language URL
+function getPageType(path: string): 'home' | 'group' | 'individual' | 'contact' | 'other' {
+  const cleanPath = path.replace(/\/$/, '');
+  
+  // Home pages
+  if (cleanPath === '' || cleanPath === '/' || 
+      cleanPath === '/en' || cleanPath === '/de' || 
+      cleanPath === '/es' || cleanPath === '/fr') {
+    return 'home';
+  }
+  
+  // Group training pages
+  if (cleanPath.includes('treino-grupo') || 
+      cleanPath.includes('group-training') ||
+      cleanPath.includes('gruppenertraining') ||
+      cleanPath.includes('entrenamiento-grupo') ||
+      cleanPath.includes('entrainement-groupe')) {
+    return 'group';
+  }
+  
+  // Individual training pages
+  if (cleanPath.includes('treino-individual') || 
+      cleanPath.includes('one-on-one-training') ||
+      cleanPath.includes('einzeltraining') ||
+      cleanPath.includes('entrenamiento-personal') ||
+      cleanPath.includes('entrainement-personnel')) {
+    return 'individual';
+  }
+  
+  // Contact pages
+  if (cleanPath.includes('contacto') || 
+      cleanPath.includes('contact') ||
+      cleanPath.includes('kontakt')) {
+    return 'contact';
+  }
+  
+  return 'other';
+}
+
+const pageType = getPageType(currentPath);
+
+// Build URLs for each language based on page type
+const ptLink = pageType === 'home' ? '/' 
+  : pageType === 'group' ? '/treino-grupo'
+  : pageType === 'individual' ? '/treino-individual'
+  : pageType === 'contact' ? '/contacto'
+  : '/';
+
+const enLink = pageType === 'home' ? '/en/'
+  : pageType === 'group' ? '/en/group-training'
+  : pageType === 'individual' ? '/en/one-on-one-training'
+  : pageType === 'contact' ? '/en/contact'
+  : '/en/';
+
+const deLink = pageType === 'home' ? '/de/'
+  : pageType === 'group' ? '/de/gruppenertraining'
+  : pageType === 'individual' ? '/de/einzeltraining'
+  : pageType === 'contact' ? '/de/kontakt'
+  : '/de/';
+
+const esLink = pageType === 'home' ? '/es/'
+  : pageType === 'group' ? '/es/entrenamiento-grupo'
+  : pageType === 'individual' ? '/es/entrenamiento-personal'
+  : pageType === 'contact' ? '/es/contacto'
+  : '/es/';
+
+const frLink = pageType === 'home' ? '/fr/'
+  : pageType === 'group' ? '/fr/entrainement-groupe'
+  : pageType === 'individual' ? '/fr/entrainement-personnel'
+  : pageType === 'contact' ? '/fr/contact'
+  : '/fr/';
+
+const menuitems = lang === 'en' 
+  ? [
+      { title: t('nav.training_group'), path: "/en/group-training" },
+      { title: t('nav.training_individual'), path: "/en/one-on-one-training" },
+      { title: t('nav.contact'), path: "/en/contact" },
+    ]
+  : lang === 'de'
+  ? [
+      { title: t('nav.training_group'), path: "/de/gruppenertraining" },
+      { title: t('nav.training_individual'), path: "/de/einzeltraining" },
+      { title: t('nav.contact'), path: "/de/kontakt" },
+    ]
+  : lang === 'es'
+  ? [
+      { title: t('nav.training_group'), path: "/es/entrenamiento-grupo" },
+      { title: t('nav.training_individual'), path: "/es/entrenamiento-personal" },
+      { title: t('nav.contact'), path: "/es/contacto" },
+    ]
+  : lang === 'fr'
+  ? [
+      { title: t('nav.training_group'), path: "/fr/entrainement-groupe" },
+      { title: t('nav.training_individual'), path: "/fr/entrainement-personnel" },
+      { title: t('nav.contact'), path: "/fr/contact" },
+    ]
+  : [
+      { title: t('nav.training_group'), path: "/treino-grupo" },
+      { title: t('nav.training_individual'), path: "/treino-individual" },
+      { title: t('nav.contact'), path: "/contacto" },
+    ];
+
+const homeLink = lang === 'pt' ? '/' : `/${lang}/`;
 ---
 
 <Container>
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
+        <a href={homeLink} class="text-lg"
           >
           <span>Estúdio</span>
           <span class="font-bold">Nódoa Negra</span>
@@ -59,7 +154,110 @@ const menuitems = [
             ))
           }
         </ul>
+
+        <!-- Language Dropdown -->
+        <div class="relative" id="lang-dropdown">
+          <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 text-gray-800 hover:text-gray-900 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+            <!-- Globe Icon -->
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20H7m6-4h6v2a3 3 0 01-3 3h-6a3 3 0 01-3-3v-2z"></path>
+            </svg>
+            <span class="font-medium text-sm hidden sm:inline">{lang.toUpperCase()}</span>
+            <svg class="w-4 h-4 transition-transform duration-200" id="lang-arrow" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          
+          <!-- Dropdown Menu -->
+          <div id="lang-menu" class="hidden absolute left-0 right-0 lg:right-0 lg:left-auto mt-1 w-full lg:w-40 bg-white border border-gray-200 rounded-lg shadow-xl z-50 overflow-hidden top-full">
+            <a
+              href={ptLink}
+              class:list={[
+                "flex items-center gap-2 w-full px-4 py-3 text-sm transition-colors duration-150",
+                lang === 'pt'
+                  ? "bg-primary text-secondary font-medium"
+                  : "text-gray-800 hover:bg-gray-100"
+              ]}
+            >
+              <span class="text-lg">🇵🇹</span>
+              <span>Português</span>
+            </a>
+            <a
+              href={enLink}
+              class:list={[
+                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-gray-100 transition-colors duration-150",
+                lang === 'en'
+                  ? "bg-primary text-secondary font-medium"
+                  : "text-gray-800 hover:bg-gray-100"
+              ]}
+            >
+              <span class="text-lg">🇬🇧</span>
+              <span>English</span>
+            </a>
+            <a
+              href={deLink}
+              class:list={[
+                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-gray-100 transition-colors duration-150",
+                lang === 'de'
+                  ? "bg-primary text-secondary font-medium"
+                  : "text-gray-800 hover:bg-gray-100"
+              ]}
+            >
+              <span class="text-lg">🇩🇪</span>
+              <span>Deutsch</span>
+            </a>
+            <a
+              href={esLink}
+              class:list={[
+                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-gray-100 transition-colors duration-150",
+                lang === 'es'
+                  ? "bg-primary text-secondary font-medium"
+                  : "text-gray-800 hover:bg-gray-100"
+              ]}
+            >
+              <span class="text-lg">🇪🇸</span>
+              <span>Español</span>
+            </a>
+            <a
+              href={frLink}
+              class:list={[
+                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-gray-100 transition-colors duration-150",
+                lang === 'fr'
+                  ? "bg-primary text-secondary font-medium"
+                  : "text-gray-800 hover:bg-gray-100"
+              ]}
+            >
+              <span class="text-lg">🇫🇷</span>
+              <span>Français</span>
+            </a>
+          </div>
+        </div>
       </MenuItems>
     </Astronav>
   </header>
 </Container>
+
+<script>
+  const langToggle = document.getElementById('lang-toggle');
+  const langMenu = document.getElementById('lang-menu');
+  const langArrow = document.getElementById('lang-arrow');
+
+  if (langToggle && langMenu) {
+    langToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langMenu.classList.toggle('hidden');
+      langArrow.classList.toggle('rotate-180');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', () => {
+      langMenu.classList.add('hidden');
+      langArrow.classList.remove('rotate-180');
+    });
+
+    // Prevent closing when clicking inside the menu
+    langMenu.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  }
+</script>

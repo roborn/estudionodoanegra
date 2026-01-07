@@ -1,0 +1,117 @@
+{
+  "common": {
+    "brand_full": "Estúdio Nódoa Negra",
+    "brand_short": "Nódoa Negra",
+    "slogan": "Entraînement personnalisé en petits groupes",
+    "location": "Funchal, Madeira",
+    "copyright": "Copyright © {year} Estúdio Nódoa Negra.",
+    "location_full": "Rua da Ponta da Cruz 2, Funchal",
+    "email": "estudio.nodoanegra@gmail.com",
+    "sending": "Envoi en cours..."
+  },
+  "nav": {
+    "training_group": "Entraînement en Groupe",
+    "training_individual": "Entraînement Personnalisé",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Studio d'Entraînement Personnalisé",
+    "description_1": "Nous sommes un studio d'entraînement situé à <b>Funchal, Madeira</b>, dédié à promouvoir l'activité physique pour tous tout en vous aidant à développer force et endurance.",
+    "description_2": "Chez Nódoa Negra, nos entraîneurs se spécialisent dans l'entraînement de force, l'hypertrophie et l'amélioration de la composition corporelle.",
+    "description_3": "Par le biais d'exercices exigeants qui repousent vos limites —et peuvent laisser quelques \"contusions\"— nous nous engageons à améliorer votre forme physique et à renforcer votre confiance."
+  },
+  "features": {
+    "title": "À qui nous servons",
+    "description_1": "Nos services d'entraînement personnalisé sont conçus pour quiconque recherche des conseils professionnels, un coaching spécialisé, la confidentialité et la sécurité.<br>Que vous commenciez tout juste votre parcours de remise en forme ou que vous soyez un athlète expérimenté, nous vous invitons à travailler vers vos objectifs avec nous.",
+    "description_2": "Si vous appréciez un environnement ciblé où vous pouvez vous concentrer sur vos objectifs personnels, recevoir une attention individualisée et vous sentir à l'aise pendant votre entraînement, vous êtes au bon endroit. Notre studio est soigneusement conçu pour vous offrir une expérience unique où vous vous sentirez soutenu et motivé pour atteindre vos résultats souhaités."
+  },
+  "space": {
+    "title": "Notre Espace"
+  },
+  "training": {
+    "title": "Nos Programmes d'Entraînement",
+    "description": "Nous proposons deux formats d'entraînement personnalisé distincts pour s'adapter à vos besoins et objectifs individuels.",
+    "note": "Quel que soit le format choisi, nous examinons attentivement vos besoins et plaçons généralement les nouveaux membres dans notre programme d'<b>Entraînement en Groupe</b>.",
+    "benefits": "** Les deux programmes incluent une serviette d'entraînement et un café"
+  },
+  "pricing": {
+    "group_title": "Entraînement en Groupe",
+    "group_price": "1:3",
+    "group_features_1": "1 entraîneur pour 3 clients (maximum)",
+    "group_features_2": "Séances d'1 heure",
+    "group_features_3": "Motivation et soutien de groupe",
+    "group_button": "En savoir plus sur l'Entraînement en Groupe",
+    "individual_title": "Entraînement Personnalisé",
+    "individual_price": "1:1",
+    "individual_features_1": "Entraîneur dédié",
+    "individual_features_2": "Séances d'1 heure",
+    "individual_features_3": "Confidentialité complète et personnalisation",
+    "individual_button": "En savoir plus sur l'Entraînement Personnalisé"
+  },
+  "training_group": {
+    "title": "Entraînement en Groupe",
+    "subtitle": "Entraînement personnalisé en petits groupes",
+    "description_1": "Nous proposons un entraînement personnalisé en petits groupes avec un maximum de 3 clients à la fois. Chaque groupe est dirigé par un entraîneur dédié qui offre une attention individualisée à chaque participant.",
+    "description_2": "Cette approche vous offre les avantages de l'entraînement personnalisé tout en profitant d'une atmosphère motivante et du soutien mutuel avec les autres membres du groupe.",
+    "description_3": "Nous gardons intentionnellement les groupes petits pour nous assurer que vous recevez les conseils dont vous avez besoin pour atteindre efficacement vos objectifs.",
+    "pricing_title": "Tarification",
+    "plan": "Plan",
+    "sessions": "Séances",
+    "monthly_fee": "Tarif Mensuel",
+    "plan_1": "1",
+    "plan_1_sessions": "12",
+    "plan_1_price": "180€ / personne",
+    "plan_2": "2",
+    "plan_2_sessions": "10",
+    "plan_2_price": "160€ / personne",
+    "plan_3": "3",
+    "plan_3_sessions": "8",
+    "plan_3_price": "145€ / personne",
+    "plan_4": "4",
+    "plan_4_sessions": "6",
+    "plan_4_price": "115€ / personne",
+    "plan_5": "5",
+    "plan_5_sessions": "4",
+    "plan_5_price": "80€ / personne",
+    "vat_note": "Au prix du tarif mensuel s'<b>ajoute la TVA au taux légal en vigueur.</b>",
+    "registration_title": "Pré-inscription",
+    "registration_desc": "Remplissez le formulaire et nous vous contacterons dès que possible.",
+    "registration_contact": "Vous pouvez toujours <a href=\"{contact_link}\" class=\"underline\">nous contacter</a> pour clarifier une question ou visiter notre studio."
+  },
+  "training_individual": {
+    "title": "Entraînement Personnalisé",
+    "subtitle": "Entraînement individuel personnalisé",
+    "description_1": "Notre entraînement personnalisé est idéal pour les situations où vous recherchez une attention exclusive, comme dans les cas médicaux particuliers ou lorsque vous appréciez la confidentialité maximale pendant l'entraînement.",
+    "description_2": "Dans ce format, vous aurez un entraîneur dédié exclusivement à vous. L'entraîneur créera un programme personnalisé tenant compte de vos objectifs, de votre condition physique actuelle et de vos besoins spécifiques.",
+    "description_3": "Cette approche individualisée permet une attention encore plus ciblée sur vos progrès, garantissant que chaque séance d'entraînement est adaptée à vos capacités et limitations.",
+    "registration_title": "Pré-inscription",
+    "registration_desc": "Remplissez le formulaire et nous vous contacterons dès que possible.",
+    "registration_contact": "Vous pouvez toujours <a href=\"{contact_link}\" class=\"underline\">nous contacter</a> pour clarifier une question ou visiter notre studio."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous sommes ici pour vous aider =)",
+    "contact_studio": "Contacter le studio",
+    "contact_desc": "Nous sommes ici pour vous aider. Remplissez le formulaire ou envoyez un e-mail.",
+    "location_label": "Adresse",
+    "email_label": "E-mail"
+  },
+  "forms": {
+    "name": "Nom",
+    "name_required": "Veuillez indiquer votre nom.",
+    "email": "E-mail",
+    "email_required": "Veuillez indiquer votre e-mail.",
+    "email_invalid": "Veuillez indiquer un e-mail valide.",
+    "phone": "Téléphone",
+    "phone_required": "Veuillez indiquer votre numéro de téléphone.",
+    "message": "Message",
+    "message_required": "Veuillez écrire votre message.",
+    "submit_registration": "Envoyer la pré-inscription",
+    "submit_contact": "Envoyer le message",
+    "error": "Oups!"
+  },
+  "404": {
+    "title": "404 Page non trouvée",
+    "message": "Page non trouvée."
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "common": {
+    "brand_full": "Estúdio Nódoa Negra",
+    "brand_short": "Nódoa Negra",
+    "slogan": "Personalisiertes Training in kleinen Gruppen",
+    "location": "Funchal, Madeira",
+    "copyright": "Copyright © {year} Estúdio Nódoa Negra.",
+    "location_full": "Rua da Ponta da Cruz 2, Funchal",
+    "email": "estudio.nodoanegra@gmail.com",
+    "sending": "Wird versendet..."
+  },
+  "nav": {
+    "training_group": "Gruppentraining",
+    "training_individual": "Einzeltraining",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Personalisiertes Trainingsstudio",
+    "description_1": "Wir sind ein Trainingsstudio in <b>Funchal, Madeira</b>, das sich der Förderung von körperlicher Aktivität für alle widmet und dir hilft, Kraft und Ausdauer aufzubauen.",
+    "description_2": "Bei Nódoa Negra spezialisieren sich unsere Trainer auf Krafttraining, Hypertrophie und Körperkompositionsverbesserung.",
+    "description_3": "Durch herausfordernde Übungen, die deine Grenzen testen – und möglicherweise einige \"Prellungen\" hinterlassen – möchten wir deine Fitness verbessern und dein Selbstvertrauen stärken."
+  },
+  "features": {
+    "title": "Für wen wir trainieren",
+    "description_1": "Unsere personalisierten Trainingsleistungen sind für alle konzipiert, die professionelle Anleitung, spezialisiertes Coaching, Privatsphäre und Sicherheit suchen.<br>Egal ob du gerade mit deinem Fitness-Weg beginnst oder ein erfahrener Athlet bist, wir heißen dich willkommen, um deine Ziele mit uns zu verfolgen.",
+    "description_2": "Wenn du eine fokussierte Umgebung schätzt, in der du dich auf deine persönlichen Ziele konzentrieren kannst, individuelle Aufmerksamkeit erhältst und dich während des Trainings wohlfühlst, bist du hier richtig. Unser Studio ist sorgfältig konzipiert, um dir ein einzigartiges Erlebnis zu bieten, in dem du dich unterstützt und motiviert fühlst, deine gewünschten Ergebnisse zu erreichen."
+  },
+  "space": {
+    "title": "Unser Studio"
+  },
+  "training": {
+    "title": "Unsere Trainingsprogramme",
+    "description": "Wir bieten zwei unterschiedliche personalisierte Trainingsformate an, die zu deinen individuellen Bedürfnissen passen.",
+    "note": "Unabhängig von deiner Wahl berücksichtigen wir deine Bedürfnisse sorgfältig und platzieren neue Mitglieder normalerweise in unserem <b>Gruppentrainingsprogramm</b>.",
+    "benefits": "** Beide Programme beinhalten Trainingstuch und Kaffee"
+  },
+  "pricing": {
+    "group_title": "Gruppentraining",
+    "group_price": "1:3",
+    "group_features_1": "1 Trainer pro 3 Kunden (maximal)",
+    "group_features_2": "1-Stunden-Einheiten",
+    "group_features_3": "Gruppenmotivation und Unterstützung",
+    "group_button": "Mehr über Gruppentraining erfahren",
+    "individual_title": "Einzeltraining",
+    "individual_price": "1:1",
+    "individual_features_1": "Dedizierter Trainer",
+    "individual_features_2": "1-Stunden-Einheiten",
+    "individual_features_3": "Vollständige Privatsphäre und Personalisierung",
+    "individual_button": "Mehr über Einzeltraining erfahren"
+  },
+  "training_group": {
+    "title": "Gruppentraining",
+    "subtitle": "Personalisiertes Training in kleinen Gruppen",
+    "description_1": "Wir bieten personalisiertes Training in kleinen Gruppen mit maximal 3 Kunden gleichzeitig an. Jede Gruppe wird von einem dedizierten Trainer geleitet, der jedem Teilnehmer individuelle Aufmerksamkeit schenkt.",
+    "description_2": "Dieser Ansatz bietet dir die Vorteile des personalisierten Trainings und gleichzeitig eine motivierende Atmosphäre sowie gegenseitige Unterstützung mit anderen Gruppenmitgliedern.",
+    "description_3": "Wir halten die Gruppen bewusst klein, um sicherzustellen, dass du die Anleitung erhältst, die du brauchst, um deine Ziele effektiv zu erreichen.",
+    "pricing_title": "Preisgestaltung",
+    "plan": "Plan",
+    "sessions": "Sitzungen",
+    "monthly_fee": "Monatliche Gebühr",
+    "plan_1": "1",
+    "plan_1_sessions": "12",
+    "plan_1_price": "180€ / Person",
+    "plan_2": "2",
+    "plan_2_sessions": "10",
+    "plan_2_price": "160€ / Person",
+    "plan_3": "3",
+    "plan_3_sessions": "8",
+    "plan_3_price": "145€ / Person",
+    "plan_4": "4",
+    "plan_4_sessions": "6",
+    "plan_4_price": "115€ / Person",
+    "plan_5": "5",
+    "plan_5_sessions": "4",
+    "plan_5_price": "80€ / Person",
+    "vat_note": "Der Monatsbeitrag <b>zuzüglich gesetzlicher Mehrwertsteuer.</b>",
+    "registration_title": "Voranmeldung",
+    "registration_desc": "Fülle das Formular aus und wir werden uns so bald wie möglich bei dir melden.",
+    "registration_contact": "Du kannst uns auch jederzeit <a href=\"{contact_link}\" class=\"underline\">kontaktieren</a>, um Fragen zu stellen oder unser Studio zu besuchen."
+  },
+  "training_individual": {
+    "title": "Einzeltraining",
+    "subtitle": "Personalisiertes Einzeltraining",
+    "description_1": "Unser Einzeltraining ist ideal für Situationen, in denen du exklusive Betreuung suchst, wie bei besonderen medizinischen Fällen oder wenn dir maximale Privatsphäre beim Training wichtig ist.",
+    "description_2": "In diesem Format hast du einen dedizierten Trainer, der sich ausschließlich um dich kümmert. Der Trainer erstellt ein personalisiertes Programm, das deine Ziele, deine aktuelle Fitness und deine spezifischen Bedürfnisse berücksichtigt.",
+    "description_3": "Dieser individualisierte Ansatz ermöglicht eine noch stärker fokussierte Aufmerksamkeit auf deinen Fortschritt und garantiert, dass jede Trainingseinheit an deine Fähigkeiten und Limitationen angepasst wird.",
+    "registration_title": "Voranmeldung",
+    "registration_desc": "Fülle das Formular aus und wir werden uns so bald wie möglich bei dir melden.",
+    "registration_contact": "Du kannst uns auch jederzeit <a href=\"{contact_link}\" class=\"underline\">kontaktieren</a>, um Fragen zu stellen oder unser Studio zu besuchen."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind hier, um dir zu helfen =)",
+    "contact_studio": "Kontaktiere das Studio",
+    "contact_desc": "Wir sind hier, um dir zu helfen. Fülle das Formular aus oder sende eine E-Mail.",
+    "location_label": "Adresse",
+    "email_label": "E-Mail"
+  },
+  "forms": {
+    "name": "Name",
+    "name_required": "Bitte gib deinen Namen ein.",
+    "email": "E-Mail",
+    "email_required": "Bitte gib deine E-Mail-Adresse ein.",
+    "email_invalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "phone": "Telefon",
+    "phone_required": "Bitte gib deine Telefonnummer ein.",
+    "message": "Nachricht",
+    "message_required": "Bitte schreib deine Nachricht.",
+    "submit_registration": "Voranmeldung einreichen",
+    "submit_contact": "Nachricht senden",
+    "error": "Oops!"
+  },
+  "404": {
+    "title": "404 Seite nicht gefunden",
+    "message": "Seite nicht gefunden."
+  }
+}

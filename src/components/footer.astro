@@ -1,5 +1,18 @@
+---
+import { useTranslations, Language } from "@i18n/utils";
+
+interface Props {
+  lang?: Language;
+}
+
+const lang = Astro.props.lang || 'pt';
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+---
+
 <footer class="my-20">
   <p class="text-center text-sm">
-    Copyright © {new Date().getFullYear()} Estúdio Nódoa Negra.
+    {t('common.copyright').replace('{year}', year.toString())}
   </p>
 </footer>
+

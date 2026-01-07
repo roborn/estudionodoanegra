@@ -1,0 +1,117 @@
+{
+  "common": {
+    "brand_full": "Estúdio Nódoa Negra",
+    "brand_short": "Nódoa Negra",
+    "slogan": "Treino personalizado em pequenos grupos",
+    "location": "Funchal, Madeira",
+    "copyright": "Copyright © {year} Estúdio Nódoa Negra.",
+    "location_full": "Rua da Ponta da Cruz 2, Funchal",
+    "email": "estudio.nodoanegra@gmail.com",
+    "sending": "A enviar..."
+  },
+  "nav": {
+    "training_group": "Treino 1:3",
+    "training_individual": "Treino 1:1",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Estúdio de Treino Personalizado",
+    "description_1": "Somos um estúdio localizado no <b>Funchal, Madeira</b>, onde promovemos a atividade física para todos, ajudando a aumentar a força e resistência.",
+    "description_2": "Aqui na Nódoa Negra, os nossos treinadores são especialistas em treino de força, hipertrofia e melhoria da composição corporal.",
+    "description_3": "Através de diversos exercícios, que desafiam os teus limites e podem deixar algumas \"nódoas negras\", queremos melhorar a tua condição física e aumentar a tua auto-estima."
+  },
+  "features": {
+    "title": "Para quem se destina",
+    "description_1": "Acreditamos que os nossos serviços de treino personalizado são destinados a todas as pessoas que desejam um atendimento personalizado, orientação especializada, privacidade e segurança.<br>Queremos acolher-te se estás comprometido em melhorar a tua condição física, independentemente do teu nível de experiência ou habilidade.",
+    "description_2": "Se valorizas um ambiente tranquilo, onde podes concentrar-te nos teus objetivos pessoais, receber atenção individualizada e sentir-te confortável durante todo o processo, estamos aqui para te atender. O nosso estúdio é um espaço projectado para proporcionar-te uma experiência única, onde te sentirás apoiado e motivado a alcançar os teus resultados desejados."
+  },
+  "space": {
+    "title": "O nosso espaço"
+  },
+  "training": {
+    "title": "Os nossos treinos",
+    "description": "Oferecemos dois modos distintos de treino personalizado para atender às tuas necessidades individuais.",
+    "note": "Independentemente do modo escolhido, a tua opção é cuidadosamente considerada, e garantimos a tua inserção num grupo de <b>Treino 1:3</b>.",
+    "benefits": "** Os dois modos incluem toalha de treino e café"
+  },
+  "pricing": {
+    "group_title": "Treino em pequenos grupos",
+    "group_price": "1:3",
+    "group_features_1": "1 treinador por 3 clientes (máximo)",
+    "group_features_2": "Sessão de 1 hora",
+    "group_features_3": "Motivação de grupo",
+    "group_button": "Mais informação sobre o 1:3",
+    "individual_title": "Treino Personalizado",
+    "individual_price": "1:1",
+    "individual_features_1": "1 treinador por cliente",
+    "individual_features_2": "Sessão de 1 hora",
+    "individual_features_3": "Atendimento com mais privacidade",
+    "individual_button": "Mais informação sobre o 1:1"
+  },
+  "training_group": {
+    "title": "Treino 1:3",
+    "subtitle": "Pequenos grupos de treino personalizado",
+    "description_1": "Realizamos treinos personalizados em pequenos grupos, com um máximo de 3 clientes simultaneamente, em que cada grupo é acompanhado por um treinador dedicado, que oferece atenção individualizada a cada participante.",
+    "description_2": "Esta abordagem permite que aproveites os benefícios do treino personalizado, enquanto desfrutas de uma atmosfera motivadora e de apoio mútuo com os outros membros do grupo.",
+    "description_3": "Mantemos os grupos intencionalmente pequenos para garantir que recebes a orientação necessária para atingires os teus objetivos de forma eficaz.",
+    "pricing_title": "Preçário",
+    "plan": "Plano",
+    "sessions": "Entradas",
+    "monthly_fee": "Mensalidade",
+    "plan_1": "1",
+    "plan_1_sessions": "12",
+    "plan_1_price": "180€ / pessoa",
+    "plan_2": "2",
+    "plan_2_sessions": "10",
+    "plan_2_price": "160€ / pessoa",
+    "plan_3": "3",
+    "plan_3_sessions": "8",
+    "plan_3_price": "145€ / pessoa",
+    "plan_4": "4",
+    "plan_4_sessions": "6",
+    "plan_4_price": "115€ / pessoa",
+    "plan_5": "5",
+    "plan_5_sessions": "4",
+    "plan_5_price": "80€ / pessoa",
+    "vat_note": "Ao preço da mensalidade <b>acresce o IVA à taxa legal em vigor.</b>",
+    "registration_title": "Pré-inscrição",
+    "registration_desc": "Preenche o formulário e contactamos-te logo que possível.",
+    "registration_contact": "Podes sempre entrar em <a href=\"{contact_link}\" class=\"underline\">contacto connosco</a> para esclarecer alguma dúvida ou visitares o nosso espaço."
+  },
+  "training_individual": {
+    "title": "Treino 1:1",
+    "subtitle": "Treino individual personalizado",
+    "description_1": "O nosso modo individual é ideal para situações em que buscas um atendimento exclusivo, como em casos médicos específicos ou quando valorizas a máxima privacidade durante os treinos.",
+    "description_2": "Nesse formato, terás um treinador dedicado exclusivamente a ti. O treinador irá criar um programa personalizado, levando em consideração as tuas metas, a tua condição física atual e as tuas necessidades específicas.",
+    "description_3": "Esta abordagem individualizada permite uma atenção ainda mais focada no teu progresso, garantindo que cada treino seja adaptado às tuas capacidades e limitações.",
+    "registration_title": "Pré-inscrição",
+    "registration_desc": "Preenche o formulário e contactamos-te logo que possível.",
+    "registration_contact": "Podes sempre entrar em <a href=\"{contact_link}\" class=\"underline\">contacto connosco</a> para esclarecer alguma dúvida ou visitares o nosso espaço."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Estamos aqui para ajudar =)",
+    "contact_studio": "Contactar o estúdio",
+    "contact_desc": "Estamos aqui para ajudar. Preenche o formulário ou envia e-mail.",
+    "location_label": "Endereço",
+    "email_label": "E-mail"
+  },
+  "forms": {
+    "name": "Nome",
+    "name_required": "Por favor indica o teu nome.",
+    "email": "E-mail",
+    "email_required": "Por favor indica o teu e-mail.",
+    "email_invalid": "Por favor indica um e-mail válido.",
+    "phone": "Telefone",
+    "phone_required": "Por favor indica o teu número de telefone.",
+    "message": "Mensagem",
+    "message_required": "Por favor escreve a tua mensagem.",
+    "submit_registration": "Submeter pré-inscrição",
+    "submit_contact": "Enviar mensagem",
+    "error": "Ooops!"
+  },
+  "404": {
+    "title": "404 Not Found",
+    "message": "Page not found."
+  }
+}

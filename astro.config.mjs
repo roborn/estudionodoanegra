@@ -13,6 +13,15 @@ export default defineConfig({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
     mdx(),
-    sitemap(),
+    sitemap({
+      i18n: {
+        defaultLocale: "pt",
+        locales: {
+          pt: "pt-PT",
+          en: "en-US",
+        },
+      },
+    }),
   ],
 });
+

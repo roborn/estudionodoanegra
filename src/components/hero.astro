@@ -1,6 +1,14 @@
 ---
 import { Picture } from "@astrojs/image/components";
 import Logo from "assets/logo-nodoa-negra.png";
+import { useTranslations, Language } from "@i18n/utils";
+
+interface Props {
+  lang?: Language;
+}
+
+const lang = Astro.props.lang || 'pt';
+const t = useTranslations(lang);
 ---
 
 <main
@@ -8,7 +16,7 @@ import Logo from "assets/logo-nodoa-negra.png";
   <div class="md:block mb-10 md:mt-10 md:mr-10">
     <Picture
       src={Logo}
-      alt="Estúdio Nódoa Negra"
+      alt={t('common.brand_full')}
       widths={[275, 550, 1100]}
       aspectRatio="2147:1536"
       sizes="(max-width: 800px) 100vw, 500px"
@@ -19,16 +27,10 @@ import Logo from "assets/logo-nodoa-negra.png";
   <div>
     <h1
       class="text-2xl lg:text-4xl font-medium lg:tracking-tight xl:tracking-tighter mt-1">
-      Estúdio de Treino Personalizado
+      {t('hero.title')}
     </h1>
-    <p class="text-lg mt-4 text-slate-900 max-w-xl">
-      Somos um estúdio localizado no <b>Funchal, Madeira</b>, onde promovemos a atividade física para todos, ajudando a aumentar a força e resistência.
-    </p>
-    <p class="text-lg mt-4 text-slate-900 max-w-xl">
-      Aqui na Nódoa Negra, os nossos treinadores são especialistas em treino de força, hipertrofia e melhoria da composição corporal.
-    </p>
-    <p class="text-lg mt-4 text-slate-900 max-w-xl">
-      Através de diversos exercícios, que desafiam os teus limites e podem deixar algumas "nódoas negras", queremos melhorar a tua condição física e aumentar a tua auto-estima.
-    </p>
+    <p class="text-lg mt-4 text-slate-900 max-w-xl" set:html={t('hero.description_1')} />
+    <p class="text-lg mt-4 text-slate-900 max-w-xl" set:html={t('hero.description_2')} />
+    <p class="text-lg mt-4 text-slate-900 max-w-xl" set:html={t('hero.description_3')} />
   </div>
 </main>

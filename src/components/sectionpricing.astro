@@ -3,34 +3,42 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Pricing from "@components/pricing.astro";
 import { Icon } from "astro-icon";
+import { useTranslations, Language, getLocalizedPath } from "@i18n/utils";
+
+interface Props {
+  lang?: Language;
+}
+
+const lang = Astro.props.lang || 'pt';
+const t = useTranslations(lang);
 
 const pricing = [
   {
-    name: "Treino em pequenos grupos",
-    price: "1:3",
+    name: t('pricing.group_title'),
+    price: t('pricing.group_price'),
     popular: true,
     features: [
-      "1 treinador por 3 clientes (máximo)",
-      "Sessão de 1 hora",
-      "Motivação de grupo",
+      t('pricing.group_features_1'),
+      t('pricing.group_features_2'),
+      t('pricing.group_features_3'),
     ],
     button: {
-      text: "Mais informação sobre o 1:3",
-      link: "/treino-grupo",
+      text: t('pricing.group_button'),
+      link: getLocalizedPath("/treino-grupo", lang),
     },
   },
   {
-    name: "Treino Personalizado",
-    price: "1:1",
+    name: t('pricing.individual_title'),
+    price: t('pricing.individual_price'),
     popular: true,
     features: [
-      "1 treinador por cliente",
-      "Sessão de 1 hora",
-      "Atendimento com mais privacidade",
+      t('pricing.individual_features_1'),
+      t('pricing.individual_features_2'),
+      t('pricing.individual_features_3'),
     ],
     button: {
-      text: "Mais informação sobre o 1:1",
-      link: "/treino-individual",
+      text: t('pricing.individual_button'),
+      link: getLocalizedPath("/treino-individual", lang),
     },
   },
 ];
@@ -38,15 +46,15 @@ const pricing = [
 
 <Container>
   <Sectionhead>
-    <Fragment slot="title">Os nossos treinos</Fragment>
+    <Fragment slot="title">{t('training.title')}</Fragment>
     <Fragment slot="desc">
-      <p class="text-lg mb-1">Oferecemos dois modos distintos de treino personalizado para atender às tuas necessidades individuais.</p>
-      <p class="">Independentemente do modo escolhido, a tua opção é cuidadosamente considerada, e garantimos a tua inserção num grupo de <b>Treino 1:3</b>.</p>
+      <p class="text-lg mb-1">{t('training.description')}</p>
+      <p class="" set:html={t('training.note')} />
     </Fragment>
   </Sectionhead>
 
   <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-screen-lg mt-12">
     {pricing.map((item) => <Pricing plan={item} />)}
-    <p>** Os dois modos incluem toalha de treino e café <Icon class="text-secondary w-5 h-5 mb-1 inline-block" name="bx:bx-coffee" /></p>
+    <p>{t('training.benefits')} <Icon class="text-secondary w-5 h-5 mb-1 inline-block" name="bx:bx-coffee" /></p>
   </div>
 </Container>

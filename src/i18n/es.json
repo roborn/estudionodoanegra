@@ -1,0 +1,117 @@
+{
+  "common": {
+    "brand_full": "Estúdio Nódoa Negra",
+    "brand_short": "Nódoa Negra",
+    "slogan": "Entrenamiento personalizado en pequeños grupos",
+    "location": "Funchal, Madeira",
+    "copyright": "Copyright © {year} Estúdio Nódoa Negra.",
+    "location_full": "Rua da Ponta da Cruz 2, Funchal",
+    "email": "estudio.nodoanegra@gmail.com",
+    "sending": "Enviando..."
+  },
+  "nav": {
+    "training_group": "Entrenamiento en Grupo",
+    "training_individual": "Entrenamiento Personalizado",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Estudio de Entrenamiento Personalizado",
+    "description_1": "Somos un estudio de entrenamiento ubicado en <b>Funchal, Madeira</b>, dedicado a promover la actividad física para todos mientras te ayudamos a construir fuerza y resistencia.",
+    "description_2": "En Nódoa Negra, nuestros entrenadores se especializan en entrenamiento de fuerza, hipertrofia y mejora de la composición corporal.",
+    "description_3": "A través de ejercicios desafiantes que empujan tus límites —y pueden dejarte algunos \"golpes\"— nos comprometemos a mejorar tu forma física y aumentar tu confianza."
+  },
+  "features": {
+    "title": "A quién servimos",
+    "description_1": "Nuestros servicios de entrenamiento personalizado están diseñados para cualquiera que busque orientación profesional, entrenamiento especializado, privacidad y seguridad.<br>Ya sea que estés comenzando tu viaje de fitness o seas un atleta experimentado, te invitamos a trabajar hacia tus objetivos con nosotros.",
+    "description_2": "Si valoras un ambiente enfocado donde puedas concentrarte en tus objetivos personales, recibir atención individualizada y sentirte cómodo durante tu entrenamiento, estás en el lugar correcto. Nuestro estudio está cuidadosamente diseñado para proporcionarte una experiencia única donde te sentirás apoyado y motivado para lograr tus resultados deseados."
+  },
+  "space": {
+    "title": "Nuestro Espacio"
+  },
+  "training": {
+    "title": "Nuestros Programas de Entrenamiento",
+    "description": "Ofrecemos dos formatos de entrenamiento personalizado distintos para adaptarse a tus necesidades y objetivos individuales.",
+    "note": "Independientemente del formato que elijas, consideramos cuidadosamente tus necesidades y normalmente colocamos nuevos miembros en nuestro programa de <b>Entrenamiento en Grupo</b>.",
+    "benefits": "** Ambos programas incluyen toalla de entrenamiento y café"
+  },
+  "pricing": {
+    "group_title": "Entrenamiento en Grupo",
+    "group_price": "1:3",
+    "group_features_1": "1 entrenador por 3 clientes (máximo)",
+    "group_features_2": "Sesiones de 1 hora",
+    "group_features_3": "Motivación y apoyo grupal",
+    "group_button": "Obtén más información sobre Entrenamiento en Grupo",
+    "individual_title": "Entrenamiento Personalizado",
+    "individual_price": "1:1",
+    "individual_features_1": "Entrenador dedicado",
+    "individual_features_2": "Sesiones de 1 hora",
+    "individual_features_3": "Privacidad completa y personalización",
+    "individual_button": "Obtén más información sobre Entrenamiento Personalizado"
+  },
+  "training_group": {
+    "title": "Entrenamiento en Grupo",
+    "subtitle": "Entrenamiento personalizado en pequeños grupos",
+    "description_1": "Ofrecemos entrenamiento personalizado en pequeños grupos con un máximo de 3 clientes a la vez. Cada grupo es dirigido por un entrenador dedicado que proporciona atención individualizada a cada participante.",
+    "description_2": "Este enfoque te brinda los beneficios del entrenamiento personalizado mientras disfrutas de una atmósfera motivadora y apoyo mutuo con otros miembros del grupo.",
+    "description_3": "Mantenemos los grupos intencionalmente pequeños para asegurar que recibas la orientación que necesitas para alcanzar tus objetivos de manera efectiva.",
+    "pricing_title": "Precios",
+    "plan": "Plan",
+    "sessions": "Sesiones",
+    "monthly_fee": "Cuota Mensual",
+    "plan_1": "1",
+    "plan_1_sessions": "12",
+    "plan_1_price": "180€ / persona",
+    "plan_2": "2",
+    "plan_2_sessions": "10",
+    "plan_2_price": "160€ / persona",
+    "plan_3": "3",
+    "plan_3_sessions": "8",
+    "plan_3_price": "145€ / persona",
+    "plan_4": "4",
+    "plan_4_sessions": "6",
+    "plan_4_price": "115€ / persona",
+    "plan_5": "5",
+    "plan_5_sessions": "4",
+    "plan_5_price": "80€ / persona",
+    "vat_note": "Al precio de la cuota mensual se <b>añade el IVA según la tasa legal vigente.</b>",
+    "registration_title": "Preinscripción",
+    "registration_desc": "Rellena el formulario y nos pondremos en contacto contigo lo antes posible.",
+    "registration_contact": "Siempre puedes <a href=\"{contact_link}\" class=\"underline\">contactarnos</a> para aclarar cualquier duda o visitar nuestro estudio."
+  },
+  "training_individual": {
+    "title": "Entrenamiento Personalizado",
+    "subtitle": "Entrenamiento individual personalizado",
+    "description_1": "Nuestro entrenamiento personalizado es ideal para situaciones en las que buscas atención exclusiva, como en casos médicos especiales o cuando valoras la máxima privacidad durante el entrenamiento.",
+    "description_2": "En este formato, tendrás un entrenador dedicado exclusivamente a ti. El entrenador creará un programa personalizado que tenga en cuenta tus objetivos, tu condición física actual y tus necesidades específicas.",
+    "description_3": "Este enfoque individualizado permite una atención aún más enfocada en tu progreso, garantizando que cada sesión de entrenamiento se adapte a tus capacidades y limitaciones.",
+    "registration_title": "Preinscripción",
+    "registration_desc": "Rellena el formulario y nos pondremos en contacto contigo lo antes posible.",
+    "registration_contact": "Siempre puedes <a href=\"{contact_link}\" class=\"underline\">contactarnos</a> para aclarar cualquier duda o visitar nuestro estudio."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Estamos aquí para ayudarte =)",
+    "contact_studio": "Contactar el estudio",
+    "contact_desc": "Estamos aquí para ayudarte. Rellena el formulario o envía un correo electrónico.",
+    "location_label": "Dirección",
+    "email_label": "Correo Electrónico"
+  },
+  "forms": {
+    "name": "Nombre",
+    "name_required": "Por favor indica tu nombre.",
+    "email": "Correo Electrónico",
+    "email_required": "Por favor indica tu correo electrónico.",
+    "email_invalid": "Por favor indica un correo electrónico válido.",
+    "phone": "Teléfono",
+    "phone_required": "Por favor indica tu número de teléfono.",
+    "message": "Mensaje",
+    "message_required": "Por favor escribe tu mensaje.",
+    "submit_registration": "Enviar preinscripción",
+    "submit_contact": "Enviar mensaje",
+    "error": "¡Oops!"
+  },
+  "404": {
+    "title": "404 Página no encontrada",
+    "message": "Página no encontrada."
+  }
+}

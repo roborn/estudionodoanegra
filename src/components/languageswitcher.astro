@@ -1,0 +1,70 @@
+---
+import { getLangFromUrl, useTranslations, languages_list, defaultLanguage } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const currentPath = Astro.url.pathname;
+
+// Build the Portuguese URL by removing /en/ prefix
+let ptLink: string;
+if (currentPath.startsWith('/en/')) {
+  const pathWithoutLang = currentPath.slice(4);
+  // Map English URLs to Portuguese URLs
+  if (pathWithoutLang.startsWith('group-training')) {
+    ptLink = '/treino-grupo';
+  } else if (pathWithoutLang.startsWith('one-on-one-training')) {
+    ptLink = '/treino-individual';
+  } else if (pathWithoutLang.startsWith('contact')) {
+    ptLink = '/contacto';
+  } else {
+    ptLink = '/';
+  }
+} else {
+  ptLink = currentPath.replace(/\/$/, '') || '/';
+}
+
+// Build the English URL
+let enLink: string;
+if (currentPath === '/' || currentPath === '') {
+  enLink = '/en/';
+} else {
+  const cleanPath = currentPath.replace(/\/$/, '');
+  // Map Portuguese URLs to English URLs
+  if (cleanPath === '/treino-grupo') {
+    enLink = '/en/group-training';
+  } else if (cleanPath === '/treino-individual') {
+    enLink = '/en/one-on-one-training';
+  } else if (cleanPath === '/contacto') {
+    enLink = '/en/contact';
+  } else {
+    enLink = '/en' + cleanPath;
+  }
+}
+---
+
+<div class="flex gap-2 ml-auto">
+  <a
+    href={ptLink}
+    class:list={[
+      "px-3 py-2 rounded text-sm font-medium transition-colors",
+      lang === 'pt'
+        ? "bg-secondary text-primary"
+        : "text-secondary hover:bg-primary border border-secondary"
+    ]}
+  >
+    PT
+  </a>
+  <a
+    href={enLink}
+    class:list={[
+      "px-3 py-2 rounded text-sm font-medium transition-colors",
+      lang === 'en'
+        ? "bg-secondary text-primary"
+        : "text-secondary hover:bg-primary border border-secondary"
+    ]}
+  >
+    EN
+  </a>
+</div>
+

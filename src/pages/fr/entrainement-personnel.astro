@@ -1,0 +1,78 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Inscricaoform from "@components/inscricaoform.astro";
+import { useTranslations } from "@i18n/utils";
+
+const lang = 'fr';
+const t = useTranslations(lang);
+---
+
+<Layout title={t('training_individual.title')}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t('training_individual.title')}</Fragment>
+      <Fragment slot="desc">{t('training_individual.subtitle')}</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <p class="text-lg mt-4">
+          {t('training_individual.description_1')}
+        </p>
+        <p class="text-lg mt-4">
+          {t('training_individual.description_2')}
+        </p>
+        <div class="prose prose-lg mt-10">
+        <h3>{t('training_individual.pricing_title')}</h3>
+        <table class="text-center">
+          <thead class="border-secondary border-b-2">
+            <tr>
+              <th>{t('training_individual.plan')}</th>
+              <th>{t('training_individual.sessions')}</th>
+              <th>{t('training_individual.monthly_fee')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-secondary">
+              <td>{t('training_individual.plan_1')}</td>
+              <td>{t('training_individual.plan_1_sessions')}</td>
+              <td>{t('training_individual.plan_1_price')}</td>
+            </tr>
+            <tr class="border-secondary">
+              <td>{t('training_individual.plan_2')}</td>
+              <td>{t('training_individual.plan_2_sessions')}</td>
+              <td>{t('training_individual.plan_2_price')}</td>
+            </tr>
+            <tr class="border-secondary">
+              <td>{t('training_individual.plan_3')}</td>
+              <td>{t('training_individual.plan_3_sessions')}</td>
+              <td>{t('training_individual.plan_3_price')}</td>
+            </tr>
+            <tr class="border-secondary">
+              <td>{t('training_individual.plan_4')}</td>
+              <td>{t('training_individual.plan_4_sessions')}</td>
+              <td>{t('training_individual.plan_4_price')}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-sm mt-4" set:html={t('training_individual.vat_note')} />
+      </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl">{t('training_individual.registration_title')}</h2>
+        <p class="mt-3">
+          {t('training_individual.registration_desc')}
+        </p>
+        <p class="mt-3" set:html={t('training_individual.registration_contact').replace('{contact_link}', '/fr/contact')} />
+      </div>
+      <div>
+        <Inscricaoform plano={t('training_individual.title')} lang={lang}/>
+      </div>
+    </div>
+  </Container>
+</Layout>

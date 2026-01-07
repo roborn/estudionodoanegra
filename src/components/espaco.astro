@@ -1,9 +1,17 @@
 ---
 import Galeria from "@components/galeria.astro";
+import { useTranslations, Language } from "@i18n/utils";
+
+interface Props {
+  lang?: Language;
+}
+
+const lang = Astro.props.lang || 'pt';
+const t = useTranslations(lang);
 ---
 <div class="mb-16">
     <h3 class="text-3xl lg:text-4xl font-medium lg:tracking-tight mb-5">
-        O nosso espaço
+        {t('space.title')}
       </h3>
     <Galeria />
 </div>
