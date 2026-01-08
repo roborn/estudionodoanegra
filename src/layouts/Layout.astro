@@ -3,7 +3,7 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import LanguageSwitcher from "@components/languageswitcher.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getLangFromUrl, useTranslations, getAlternateUrls } from "@i18n/utils";
 import "@fontsource/inter/variable.css";
 
 export interface Props {
@@ -14,6 +14,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const alternateUrls = getAlternateUrls(Astro.url.pathname, Astro.site?.toString() || 'https://estudionodoanegra.com');
 
 const resolvedImageWithDomain = new URL(
   "/opengraph.jpg",
@@ -37,6 +38,12 @@ const metaDescription = t('common.brand_full') + " — " + t('common.slogan');
     <meta name="theme-color" content="#3C3C3C" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    
+    {alternateUrls.map(({ hreflang, url }) => (
+      <link rel="alternate" hreflang={hreflang} href={url} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={alternateUrls.find(a => a.lang === 'pt')?.url} />
+    
     <SEO
       title={makeTitle}
       description={metaDescription}
