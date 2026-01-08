@@ -7,10 +7,10 @@ module.exports = {
       fontFamily: {
         sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
       },
-    },
-    colors: {
-      primary: "rgb(178 168 151)",
-      secondary: "rgb(60 60 60)",
+      colors: {
+        primary: "rgb(178 168 151)",
+        secondary: "rgb(60 60 60)",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

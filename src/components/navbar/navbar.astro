@@ -116,7 +116,7 @@ const homeLink = lang === 'pt' ? '/' : `/${lang}/`;
 ---
 
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+  <header class="relative z-50 flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href={homeLink} class="text-lg"
@@ -159,8 +159,8 @@ const homeLink = lang === 'pt' ? '/' : `/${lang}/`;
         <div class="relative" id="lang-dropdown">
           <button id="lang-toggle" class="flex items-center gap-2 px-3 py-2 text-gray-800 hover:text-gray-900 rounded-lg hover:bg-gray-100 transition-colors duration-200">
             <!-- Globe Icon -->
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20H7m6-4h6v2a3 3 0 01-3 3h-6a3 3 0 01-3-3v-2z"></path>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path>
             </svg>
             <span class="font-medium text-sm hidden sm:inline">{lang.toUpperCase()}</span>
             <svg class="w-4 h-4 transition-transform duration-200" id="lang-arrow" fill="currentColor" viewBox="0 0 20 20">
@@ -169,14 +169,14 @@ const homeLink = lang === 'pt' ? '/' : `/${lang}/`;
           </button>
           
           <!-- Dropdown Menu -->
-          <div id="lang-menu" class="hidden absolute left-0 right-0 lg:right-0 lg:left-auto mt-1 w-full lg:w-40 bg-white border border-gray-200 rounded-lg shadow-xl z-50 overflow-hidden top-full">
+          <div id="lang-menu" class="hidden absolute left-0 right-0 lg:right-0 lg:left-auto mt-1 w-full lg:w-40 bg-primary border border-secondary/20 rounded-lg shadow-xl z-50 overflow-hidden top-full">
             <a
               href={ptLink}
               class:list={[
                 "flex items-center gap-2 w-full px-4 py-3 text-sm transition-colors duration-150",
                 lang === 'pt'
-                  ? "bg-primary text-secondary font-medium"
-                  : "text-gray-800 hover:bg-gray-100"
+                  ? "bg-secondary/10 text-secondary font-medium"
+                  : "text-secondary hover:bg-secondary/10"
               ]}
             >
               <span class="text-lg">🇵🇹</span>
@@ -185,10 +185,10 @@ const homeLink = lang === 'pt' ? '/' : `/${lang}/`;
             <a
               href={enLink}
               class:list={[
-                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-gray-100 transition-colors duration-150",
+                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-secondary/10 transition-colors duration-150",
                 lang === 'en'
-                  ? "bg-primary text-secondary font-medium"
-                  : "text-gray-800 hover:bg-gray-100"
+                  ? "bg-secondary/10 text-secondary font-medium"
+                  : "text-secondary hover:bg-secondary/10"
               ]}
             >
               <span class="text-lg">🇬🇧</span>
@@ -197,10 +197,10 @@ const homeLink = lang === 'pt' ? '/' : `/${lang}/`;
             <a
               href={deLink}
               class:list={[
-                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-gray-100 transition-colors duration-150",
+                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-secondary/10 transition-colors duration-150",
                 lang === 'de'
-                  ? "bg-primary text-secondary font-medium"
-                  : "text-gray-800 hover:bg-gray-100"
+                  ? "bg-secondary/10 text-secondary font-medium"
+                  : "text-secondary hover:bg-secondary/10"
               ]}
             >
               <span class="text-lg">🇩🇪</span>
@@ -209,10 +209,10 @@ const homeLink = lang === 'pt' ? '/' : `/${lang}/`;
             <a
               href={esLink}
               class:list={[
-                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-gray-100 transition-colors duration-150",
+                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-secondary/10 transition-colors duration-150",
                 lang === 'es'
-                  ? "bg-primary text-secondary font-medium"
-                  : "text-gray-800 hover:bg-gray-100"
+                  ? "bg-secondary/10 text-secondary font-medium"
+                  : "text-secondary hover:bg-secondary/10"
               ]}
             >
               <span class="text-lg">🇪🇸</span>
@@ -221,10 +221,10 @@ const homeLink = lang === 'pt' ? '/' : `/${lang}/`;
             <a
               href={frLink}
               class:list={[
-                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-gray-100 transition-colors duration-150",
+                "flex items-center gap-2 w-full px-4 py-3 text-sm border-t border-secondary/10 transition-colors duration-150",
                 lang === 'fr'
-                  ? "bg-primary text-secondary font-medium"
-                  : "text-gray-800 hover:bg-gray-100"
+                  ? "bg-secondary/10 text-secondary font-medium"
+                  : "text-secondary hover:bg-secondary/10"
               ]}
             >
               <span class="text-lg">🇫🇷</span>

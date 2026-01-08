@@ -60,7 +60,9 @@ const metaDescription = t('common.brand_full') + " — " + t('common.slogan');
     />
   </head>
   <body class="bg-primary text-secondary">
-    <Navbar lang={lang} />
+    <div class="relative z-50">
+      <Navbar lang={lang} />
+    </div>
     <slot />
     <Footer lang={lang} />
     <style is:global>

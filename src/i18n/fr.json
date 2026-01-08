@@ -92,8 +92,11 @@
     "title": "Contact",
     "subtitle": "Nous sommes ici pour vous aider =)",
     "contact_studio": "Contacter le studio",
+    "get_in_touch": "Contacter le studio",
     "contact_desc": "Nous sommes ici pour vous aider. Remplissez le formulaire ou envoyez un e-mail.",
+    "description": "Nous sommes ici pour vous aider. Remplissez le formulaire ou envoyez un e-mail.",
     "location_label": "Adresse",
+    "address": "Rua da Ponta da Cruz 2, Funchal",
     "email_label": "E-mail"
   },
   "forms": {
@@ -112,6 +115,8 @@
   },
   "404": {
     "title": "404 Page non trouvée",
-    "message": "Page non trouvée."
+    "heading": "404 - Page non trouvée",
+    "message": "Page non trouvée.",
+    "back_home": "Retour à l'accueil"
   }
 }
